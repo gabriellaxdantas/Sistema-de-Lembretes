@@ -23,7 +23,7 @@ O sistema oferece as seguintes funcionalidades:
 ## **Como executar o projeto**
 Certifique-se de ter o ambiente de desenvolvimento C# .NET 6 instalado em sua máquina.
 
-1. Clone o repositório para o seu ambiente local.
+1. Clone o repositório para o seu ambiente local. <br>
 `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
 
 2. Abra a solução do projeto utilizando o Visual Studio.
