@@ -34,7 +34,7 @@ Certifique-se de ter o ambiente de desenvolvimento C# .NET 6 instalado em sua m�
 4. Execute o projeto
 
 Também é possível baixar o projeto zip e o executar pelo .exe <br>
-[Clique aqui para baixar o projeto](https://github.com/gabriellaxdantas/Sistema-de-Lembretes/tree/dev) <br>
+[Clique aqui para ir até o exe](https://github.com/gabriellaxdantas/Sistema-de-Lembretes/tree/dev/Lembretes/Lembretes/bin/Debug/net6.0-windows) <br>
 
 
 
