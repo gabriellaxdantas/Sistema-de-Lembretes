@@ -20,7 +20,7 @@ O sistema oferece as seguintes funcionalidades:
     - O campo "Data" deve estar preenchido com uma data válida, e essa data deve ser a atual ou uma data futura.
     - Exibição dos lembretes: Os lembretes válidos são exibidos na seção "Lista de lembretes" do sistema.
 
-- Deletar lembrete: É possível excluir um lembrete anteriormente adicionado clicando no botão "Remover".
+- Deletar lembrete: É possível excluir um lembrete anteriormente adicionado selecionando o lembrete que deve ser excluído e clicando no botão "Remover".
 
 - Agrupamento por data: Ao adicionar um novo lembrete, caso a data já exista, o lembrete será exibido juntamente com os outros referente àquele dia.
 
@@ -32,7 +32,7 @@ O sistema oferece as seguintes funcionalidades:
 Certifique-se de ter o ambiente de desenvolvimento C# .NET 6 instalado em sua máquina.
 
 1. Clone o repositório para o seu ambiente local. <br>
-`git clone https://github.com/gabriellaxdantas/Sistema-de-Lembretes/tree/dev.git`
+`git clone https://github.com/gabriellaxdantas/Sistema-de-Lembretes.git`
 
 
 2. Abra a solução do projeto utilizando o Visual Studio.
