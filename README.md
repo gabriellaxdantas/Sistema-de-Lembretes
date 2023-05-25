@@ -7,6 +7,12 @@ Os lembretes adicionados são exibidos em uma lista, que é organizada em ordem 
 ## **Funcionalidades**
 O sistema oferece as seguintes funcionalidades:
 
+- Cadastro de usuário: O usuário precisa fazer um cadastro para utilizar essa aplicação. É necessário fornecer nome de usuário, e-mail e senha. Esses dados são salvos em um arquivo chamado usuario.xml.
+
+- Validação de usuário e e-mail: Não é possível criar um cadastro com um nome de usuário ou e-mail já cadastrado.
+
+- Login: É possível logar com seu e-mail e senha e acessar a aplicação quantas vezes quiser.
+
 - Adicionar novo lembrete: O usuário pode adicionar um novo lembrete, informando o nome e a data do lembrete desejado.
 
 - Validação dos campos: Ao clicar em "Criar", os campos são validados seguindo as seguintes regras:
@@ -19,6 +25,8 @@ O sistema oferece as seguintes funcionalidades:
 - Agrupamento por data: Ao adicionar um novo lembrete, caso a data já exista, o lembrete será exibido juntamente com os outros referente àquele dia.
 
 - Ordenação cronológica: Os dias da lista de lembretes são exibidos em ordem cronológica, garantindo uma visualização organizada.
+
+- Salvamento dos lembretes: Os lembretes são salvos por usuário, para que, ao logar novamente ele possa ver todos os seus lembretes anteriormente salvos. Os dados dos lembretes de cada usuário ficam armazenados em um arquivo nome_do_usuario_lembretes.xml.
 
 ## **Como executar o projeto**
 Certifique-se de ter o ambiente de desenvolvimento C# .NET 6 instalado em sua máquina.
@@ -33,7 +41,7 @@ Certifique-se de ter o ambiente de desenvolvimento C# .NET 6 instalado em sua m�
 
 4. Execute o projeto
 
-Também é possível baixar o projeto zip e o executar pelo Lembretes.exe <br>
+Também é possível baixar o projeto zip da branch Dev e o executar pelo Lembretes.exe <br>
 [Clique aqui para ir até o exe](https://github.com/gabriellaxdantas/Sistema-de-Lembretes/tree/dev/Lembretes/Lembretes/bin/Debug/net6.0-windows) <br>
 
 
