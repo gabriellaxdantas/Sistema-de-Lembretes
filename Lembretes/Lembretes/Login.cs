@@ -13,6 +13,7 @@ namespace Lembretes
 {
     public partial class Login : Form
     {
+        
         public Login()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace Lembretes
         {
             senhaLogin.UseSystemPasswordChar = !mostrarSenha.Checked;
         }
-
+        
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             // Salva os usuários no XML
@@ -47,20 +48,40 @@ namespace Lembretes
             if (usuario != null)
             {
                 // Mensagem de boas-vindas
-                MessageBox.Show("Bem-vindo!");
+                MessageBox.Show("Bem-vindo " + usuario.Nome + "!");
 
                 // Fecha o login
                 this.Hide();
+                List<LembreteItem> lembretesUsuario = CarregarLembretesUsuario(usuario);
 
                 // Abre a tela de lembretes
-                Lembretes form = new Lembretes();
-                form.Show();
+                Lembretes formulariop = new Lembretes(usuario, lembretesUsuario);
+                formulariop.Show();
             }
             else
             {
                 MessageBox.Show("E-mail ou senha inválidos");
             }
         }
+
+        private List<LembreteItem> CarregarLembretesUsuario(Usuario usuario)
+        {
+            List<LembreteItem> lembretesUsuario = new List<LembreteItem>();
+
+            if (File.Exists(usuario.ArquivoLembretes))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(List<LembreteItem>));
+
+                using (StreamReader reader = new StreamReader(usuario.ArquivoLembretes))
+                {
+                    lembretesUsuario = (List<LembreteItem>)serializer.Deserialize(reader);
+                }
+            }
+
+            return lembretesUsuario;
+        }
+
+
 
         private List<Usuario> CarregarUsuarioXML()
         {

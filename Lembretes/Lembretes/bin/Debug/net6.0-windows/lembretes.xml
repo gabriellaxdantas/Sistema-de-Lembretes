@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLembrete xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Lembrete>
+    <Nome>tirar o lixo</Nome>
+    <Data>2023-05-24T00:00:00-03:00</Data>
+  </Lembrete>
+  <Lembrete>
+    <Nome>ir pra aula</Nome>
+    <Data>2023-05-24T00:00:00-03:00</Data>
+  </Lembrete>
+  <Lembrete>
+    <Nome>sei la</Nome>
+    <Data>2023-05-25T00:00:00</Data>
+  </Lembrete>
+</ArrayOfLembrete>

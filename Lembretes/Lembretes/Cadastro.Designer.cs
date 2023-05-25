@@ -37,6 +37,8 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.facaLogin = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
+            this.nome = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +57,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label2.Location = new System.Drawing.Point(40, 142);
+            this.label2.Location = new System.Drawing.Point(40, 187);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 25);
             this.label2.TabIndex = 1;
@@ -63,7 +65,7 @@
             // 
             // email
             // 
-            this.email.Location = new System.Drawing.Point(41, 178);
+            this.email.Location = new System.Drawing.Point(41, 225);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(264, 23);
             this.email.TabIndex = 2;
@@ -73,7 +75,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.label3.Location = new System.Drawing.Point(41, 236);
+            this.label3.Location = new System.Drawing.Point(41, 261);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 25);
             this.label3.TabIndex = 3;
@@ -81,7 +83,7 @@
             // 
             // senha
             // 
-            this.senha.Location = new System.Drawing.Point(44, 272);
+            this.senha.Location = new System.Drawing.Point(44, 297);
             this.senha.Name = "senha";
             this.senha.Size = new System.Drawing.Size(264, 23);
             this.senha.TabIndex = 4;
@@ -91,7 +93,7 @@
             this.mostrarSenha.AutoSize = true;
             this.mostrarSenha.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.mostrarSenha.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.mostrarSenha.Location = new System.Drawing.Point(47, 313);
+            this.mostrarSenha.Location = new System.Drawing.Point(47, 328);
             this.mostrarSenha.Name = "mostrarSenha";
             this.mostrarSenha.Size = new System.Drawing.Size(133, 25);
             this.mostrarSenha.TabIndex = 5;
@@ -138,12 +140,33 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Já é cadastrado?";
             // 
+            // nome
+            // 
+            this.nome.Location = new System.Drawing.Point(43, 154);
+            this.nome.Name = "nome";
+            this.nome.Size = new System.Drawing.Size(264, 23);
+            this.nome.TabIndex = 9;
+            this.nome.TextChanged += new System.EventHandler(this.nome_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.label5.Location = new System.Drawing.Point(43, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(138, 25);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Nome usuario:";
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(352, 571);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.nome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.facaLogin);
             this.Controls.Add(this.btnCadastrar);
@@ -172,5 +195,7 @@
         private Button btnCadastrar;
         private LinkLabel facaLogin;
         private Label label4;
+        private TextBox nome;
+        private Label label5;
     }
 }

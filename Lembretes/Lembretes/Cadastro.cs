@@ -84,7 +84,7 @@ namespace Lembretes
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             // validações
-            if (string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(senha.Text))
+            if (string.IsNullOrEmpty(email.Text) || string.IsNullOrEmpty(senha.Text) || string.IsNullOrEmpty(nome.Text))
             {
                 MessageBox.Show("Por favor, preencha todos os campos obrigatórios.");
                 return;
@@ -95,20 +95,38 @@ namespace Lembretes
                 return;
             }
 
+            // Verificar se o usuário já existe
+            if (UsuarioExiste(nome.Text, email.Text))
+            {
+                MessageBox.Show("Usuário já existe com o mesmo nome de usuário ou e-mail.");
+                return;
+            }
+
             Usuario novoUsuario = new Usuario();
             novoUsuario.Email = email.Text;
             novoUsuario.Senha = senha.Text;
+            novoUsuario.Nome = nome.Text;
+
+            novoUsuario.ArquivoLembretes = $"{novoUsuario.Nome}_lembretes.xml";
 
             SalvarUsuarioXML(novoUsuario);
 
             MessageBox.Show("Usuário salvo com sucesso!");
 
-            Lembretes form = new Lembretes();
+            Lembretes form = new Lembretes(novoUsuario, new List<LembreteItem>());
 
             // exibir a tela de lembretes
             form.Show();
 
             this.Hide();
+        }
+
+        private bool UsuarioExiste(string nome, string email)
+        {
+            List<Usuario> listaUsuarios = CarregarUsuarioXML();
+
+            // Verificar se há algum usuário com o mesmo nome ou e-mail
+            return listaUsuarios.Any(u => u.Nome == nome || u.Email == email);
         }
 
         private bool IsValidEmail(string email)
@@ -125,6 +143,11 @@ namespace Lembretes
             Login form = new Login();
             form.Show();
             this.Hide();
+        }
+
+        private void nome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

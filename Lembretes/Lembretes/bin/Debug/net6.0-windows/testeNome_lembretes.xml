@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLembreteItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LembreteItem>
+    <Nome>teste</Nome>
+    <Data>2023-05-25T00:00:00-03:00</Data>
+    <Usuario>testeNome</Usuario>
+  </LembreteItem>
+  <LembreteItem>
+    <Nome>1</Nome>
+    <Data>2023-05-25T00:00:00-03:00</Data>
+    <Usuario>testeNome</Usuario>
+  </LembreteItem>
+  <LembreteItem>
+    <Nome>2</Nome>
+    <Data>2023-05-25T00:00:00-03:00</Data>
+    <Usuario>testeNome</Usuario>
+  </LembreteItem>
+  <LembreteItem>
+    <Nome>3</Nome>
+    <Data>2023-05-25T00:00:00-03:00</Data>
+    <Usuario>testeNome</Usuario>
+  </LembreteItem>
+  <LembreteItem>
+    <Nome>5</Nome>
+    <Data>2023-05-25T00:00:00-03:00</Data>
+    <Usuario>testeNome</Usuario>
+  </LembreteItem>
+</ArrayOfLembreteItem>

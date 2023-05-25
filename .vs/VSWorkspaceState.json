@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Lembretes",
+    "\\Lembretes\\Lembretes"
   ],
+  "SelectedNode": "\\Lembretes\\Lembretes\\Usuario.cs",
   "PreviewInSolutionExplorer": false
 }
