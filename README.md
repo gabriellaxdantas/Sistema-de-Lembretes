@@ -24,7 +24,8 @@ O sistema oferece as seguintes funcionalidades:
 Certifique-se de ter o ambiente de desenvolvimento C# .NET 6 instalado em sua máquina.
 
 1. Clone o repositório para o seu ambiente local. <br>
-`git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+`git clone https://github.com/gabriellaxdantas/Sistema-de-Lembretes/tree/dev.git`
+
 
 2. Abra a solução do projeto utilizando o Visual Studio.
 
